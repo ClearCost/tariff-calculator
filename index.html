@@ -9,36 +9,37 @@
 <body>
     <div class="calculator-container">
         <h1>Tariff Calculator</h1>
-        <div class="input-group">
-            <label for="importValue" Import Value ($):</label>
-            <input type="number" id="importValue" placeholder="Enter value of goods" min="0" step="0.01">
-        </div>
-        <div class="input-group">
-            <label for="country">Country of Origin:</label>
-            <select id="country">
-                <option value="china">China</option>
-                <option value="canada">Canada</option>
-                <option value="mexico">Mexico</option>
-                <option value="eu">European Union</option>
-                <option value="japan">Japan</option>
-                <option value="southKorea">South Korea</option>
-                <option value="uk">United Kingdom</option>
-                <option value="other">Other Countries</option>
-            </select>
-        </div>
-        <div class="input-group">
-            <label for="tariffCategory">Tariff Category:</label>
-            <select id="tariffCategory">
-                <option value="general">General Goods</option>
-                <option value="deMinimis">Low-Value Package (< $800)</option>
-                <option value="steelAluminum">Steel/Aluminum</option>
-                <option value="techExempt">Tech Exempt (e.g., smartphones, semiconductors)</option>
-            </select>
-      </div>
-        <button onclick="calculateTariff()">Calculate Tariff</button>
-        <div id="result"></div>
-        <div class="note">Note: Tariff rates may vary</div>
+        <form id="tariffForm">
+            <div class="form-group">
+                <label for="price">Price Including Tariff ($)</label>
+                <input type="number" id="price" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <label for="country">Import Country</label>
+                <select id="country" required>
+                    <option value="">Select Country</option>
+                    <option value="EU">EU</option>
+                    <option value="China">China</option>
+                    <option value="Canada">Canada</option>
+                    <option value="Japan">Japan</option>
+                    <option value="India">India</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="itemType">Item Type</label>
+                <select id="itemType" required>
+                    <option value="">Select Item Type</option>
+                    <option value="Tech">Tech</option>
+                    <option value="Metals">Metals (Steel/Aluminum)</option>
+                    <option value="Automobiles">Automobiles</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <button type="submit">Calculate Original Price</button>
+        </form>
+        <div id="result" style="display: none;"></div>
     </div>
     <script src="src/script.js"></script>
-</body>
-</html>
+    </body>
+    </html>
