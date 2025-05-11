@@ -1,39 +1,39 @@
  const tariffRates = {
             'EU': { 
-                'Tech': 0.07, 
-                'Metals': 0.08, 
+                'Tech': 0.3, 
+                'Metals': 0.10, 
                 'Automobiles': 0.10, 
-                'Other': 0.05 
+                'Other': 0.10 
             },
             'China': { 
-                'Tech': 0.08, 
-                'Metals': 0.10, 
-                'Automobiles': 0.12, 
-                'Other': 0.06 
+                'Tech': 0.10, 
+                'Metals': 0.20, 
+                'Automobiles': 0.20, 
+                'Other': 0.15 
             },
             'Canada': { 
-                'Tech': 0.06, 
-                'Metals': 0.07, 
-                'Automobiles': 0.09, 
-                'Other': 0.04 
+                'Tech': 0.3, 
+                'Metals': 0.5, 
+                'Automobiles': 0.7, 
+                'Other': 0.10 
             },
             'Japan': { 
-                'Tech': 0.04, 
-                'Metals': 0.06, 
-                'Automobiles': 0.08, 
-                'Other': 0.03 
+                'Tech': 0.3, 
+                'Metals': 0.5, 
+                'Automobiles': 0.1, 
+                'Other': 0.5 
             },
             'India': { 
-                'Tech': 0.10, 
-                'Metals': 0.12, 
-                'Automobiles': 0.15, 
-                'Other': 0.08 
+                'Tech': 0.15, 
+                'Metals': 0.10, 
+                'Automobiles': 0.80, 
+                'Other': 0.25 
             },
             'Other': { 
-                'Tech': 0.12, 
-                'Metals': 0.15, 
-                'Automobiles': 0.14, 
-                'Other': 0.10 
+                'Tech': 0.4, 
+                'Metals': 0.12, 
+                'Automobiles': 0.18, 
+                'Other': 0.15
             }
         };
 
